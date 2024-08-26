@@ -32,7 +32,7 @@ header{
 
         #logo{
             margin-left: 50px;
-            width: 100px;
+            width: 150px;
             align-items: center;
         }
 
@@ -58,7 +58,7 @@ header{
                 border: none;
                 color: black;
                 font-weight: bolder;
-                font-size: 11px;
+                font-size: 13px;
                 font-family: "Fraunces";
             }
 
@@ -108,7 +108,7 @@ header{
         }
 
         p{
-            font-size: 13px;
+            font-size: 15px;
             line-height: 25px;
             margin-bottom: 50px;
             color: rgb(129,129,129);
@@ -124,33 +124,33 @@ header{
     }
 
     #fruit{
-        height: 500px;
+        height: 600px;
         position: relative;
       
         #writeup{
             font-family: "Fraunces";
             position: absolute;
-            top: 300px;
-            left: -70px;
+            top: 380px;
+            left: -30px;
             text-align: center;
             margin-left: 150px;
             color: rgb(51,121,107);
-            font-size: 13px;
+            font-size: 15px;
             line-height: 20px;
         }
         
     }
 
     #fruittwo{
-        height: 500px;
+        height: 600px;
         position: relative;
 
         #writeuptwo{
             font-family: "Fraunces";
-            font-size: 13px;
+            font-size: 15px;
             position: absolute;
-            top:300px;
-            left:100px;
+            top:380px;
+            left:190px;
             text-align: center;
             line-height: 20px;
             color: rgb(51,121,107);
@@ -196,13 +196,16 @@ section{
             margin-bottom: 30px;
             line-height: 20px;
             text-align: center;
-            font-size: 10px;
+            font-size: 15px;
+            color: rgb(168,171,174);
         }
 
         b{
             font-size: 12px;
             text-align: center;
             line-height: 30px;
+            color: rgb(168,171,174);
+        
 
         }
     }
