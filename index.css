@@ -4,9 +4,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    /* width: 1440px; */
-    /* font-family: "Barlow"; */
-    /* font-family: "Fraunces"; */
 }
 .container{
     width: 100%;
@@ -39,7 +36,7 @@ header{
         }
 
         .leftNav{
-            width: 500px;
+            width: 400px;
             display: flex;
             justify-content: space-between;
             height: 100px;
@@ -50,17 +47,17 @@ header{
             a{
                 text-decoration: none;
                 color: white;
-                font-size: 15px;
+                font-size: 13px;
             }
 
             button{
-                padding: 10px;
+                padding: 5px;
                 border-radius: 40px;
-                width: 150px;
+                width: 100px;
                 border: none;
                 color: black;
                 font-weight: bolder;
-                font-size: 12px;
+                font-size: 11px;
                 font-family: "Fraunces";
             }
 
@@ -69,7 +66,6 @@ header{
     h1{
         display: flex;
         flex-direction: column;
-        border: 1px solid;
         text-transform: uppercase;
         color: white;
         font-family: "Fraunces";
@@ -77,24 +73,19 @@ header{
         font-weight:900;
         font-size: 2em;
         letter-spacing: 10px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 0px;
         display: block;
 
     }
     #headarrow{
-        height: 100px;
-        /* width: 100px; */
-        /* position: absolute; */
-        /* margin-top: 100px; */
+        height: 70px;
         display: block;
-        margin: 70px auto 0px;
-        /* border: 1px solid black; */
+        margin: 60px auto 0px;
     }
 }
 
 .content{
-    /* height: 200px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -116,56 +107,69 @@ header{
         }
 
         p{
-            font-size: 16px;
+            font-size: 13px;
             line-height: 25px;
             margin-bottom: 50px;
+            color: rgb(129,129,129);
         }
     }
     button{
         background-color: transparent;
         border: none;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
         font-family: "Fraunces";
         box-shadow: 0px  3px 0px 0px  yellow;
     }
 
     #fruit{
-
-        img{
-            width: 100%;
-            /* height: 100%; */
-        }
+        height: 500px;
         position: relative;
-
+      
         #writeup{
             font-family: "Fraunces";
             position: absolute;
-            bottom:10px;
+            top: 300px;
+            left: -70px;
             text-align: center;
-            /* margin: 0px auto; */
             margin-left: 150px;
-
-            p{
-                font-size: 16px;
-                line-height: 25px;
-                margin-bottom: 50px;
-            }
+            color: rgb(51,121,107);
+            font-size: 13px;
+            line-height: 20px;
         }
+        
     }
 
+    #fruittwo{
+        height: 500px;
+        position: relative;
+
+        #writeuptwo{
+            font-family: "Fraunces";
+            font-size: 13px;
+            position: absolute;
+            top:300px;
+            left:100px;
+            text-align: center;
+            line-height: 20px;
+            color: rgb(51,121,107);
+        }
+    }
 }
 section{
+
+    margin: 0px;
     h3{
         text-align: center;
-        margin-top: 100px;
-        font-size: 2em;
+        margin-top: 50px;
+        font-size: 1.5em;
         letter-spacing: 10px;
         font-family: "Fraunces";
+        color: rgb(168,171,174);
     }
 
     .testimonials{
-        margin-top: 0px;
+        margin-top: -50px;
         display: flex;
         justify-content: space-around;
         height: 100vh;
@@ -174,7 +178,6 @@ section{
         #client{
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
             align-items: center;
             font-size: 16px;
             font-family: "Fraunces";
@@ -192,28 +195,68 @@ section{
             margin-bottom: 30px;
             line-height: 20px;
             text-align: center;
+            font-size: 10px;
         }
 
         b{
+            font-size: 12px;
             text-align: center;
-            margin-bottom: 50px;
             line-height: 30px;
 
         }
     }
 }
 footer{
-  
+    margin-bottom: 0px;
    
 }
 .footImages{
     display: flex;
     justify-content: space-around;
+    margin: 0px;
     
 
     img{
         margin: 0px ;
         width: 100%;
+    }
+}
+.socialMedia{
+    height: 200px;
+    background-color: rgb(144,212,197);
+    margin-top: -5px;
+
+    #socialMediaLogo{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            margin-top: 40px;
+        }
+    }
+
+    .soicalMediaLinks{
+        width: 30%;
+        margin: 30px auto 0px;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            text-decoration: none;
+            color: rgb(51,121,107);
+            font-size: 13px;
+        }
+    }
+
+    .socialMediaImgs{
+        width: 15%;
+        display: flex;
+        margin: 50px auto 50px;
+        justify-content: space-between;
+
+        img{
+            width: 15px;
+        }
     }
 }
 
