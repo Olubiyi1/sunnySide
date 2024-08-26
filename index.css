@@ -10,9 +10,10 @@ body{
 }
 .container{
     width: 100%;
-    /* max-width: 1260px; */
+    max-width: 1260px;
     height: 100vh;
     margin: 0px auto;
+    margin: 0px;
 }
 
 header{
@@ -202,20 +203,17 @@ section{
     }
 }
 footer{
-    border: 1px s;
+  
+   
+}
+.footImages{
+    display: flex;
+    justify-content: space-around;
+    
 
-    width: 100%;
-    .footImages{
-        display: flex;
-        justify-content: space-between;
-
-        img{
-            width: 320px;
-            /* border: 1px solid; */
-            overflow: hidden;
-        }
-      
-
+    img{
+        margin: 0px ;
+        width: 100%;
     }
 }
 
