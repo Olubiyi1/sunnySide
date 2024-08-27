@@ -267,6 +267,11 @@ footer{
 
 @media screen and (min-width:0px){
 
+    header #mediahidden{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
     header nav #logo{
         width: 100px;
         margin-left: 20px;
@@ -344,11 +349,30 @@ footer{
     }
 }
 @media screen and (min-width:481px) {
+
+    header #desktop{
+        display: block;
+        margin-top: 30px;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    
+    header #mediahidden{
+        display: none;
+    }
+
+    header #headarrow{
+        margin-top: 50px;
+    }
     
     header nav .leftNav{
         display: flex;
         width: 300px;
         margin-right: 20px;
+    }
+
+    section .testimonials{
+        margin-top:20px;
     }
 
     header nav #hamburger{
@@ -362,9 +386,7 @@ footer{
         line-height: 35px;
     }
 
-    .content #fruit{
-        margin-bottom: -5px;
-    }
+   
     .content button{
         text-align: center;
         margin: 0px auto 50px;
@@ -379,6 +401,11 @@ footer{
 @media screen and (min-width:769px) {
     header #desktop{
         display: block;
+        font-size: 35px;
+    }
+
+    header #headarrow{
+        margin-top: 50px;
     }
 
     header nav{
@@ -393,9 +420,7 @@ footer{
     header #mediahidden{
         display: none;
     }
-    header #headarrow{
-        margin-top: 100px;
-    }
+    
       header nav .leftNav{
         display: flex;
         margin-right: 50px;
@@ -440,6 +465,9 @@ footer{
         text-align: center;
         margin: 0px auto 50px;
         font-size: 16px;
+    }
+    .content #fruit{
+        margin-bottom: 0px;
     }
 
 }
