@@ -42,7 +42,7 @@ header{
             justify-content: space-between;
             height: 100px;
             align-items: center;
-            margin-right: 50px;
+            /* margin-right: 50px; */
             font-family: "Barlow";
             
             a{
@@ -123,31 +123,24 @@ header{
         box-shadow: 0px  3px 0px 0px  yellow;
     }
 
-    #fruit{
-        height: 600px;
+    #fruit img{
+        /* height: 600px; */
         position: relative;
-        /* width: 100%; */
-/* 
-        img{
-            width: 100%;
-            height: 100%;
-        } */
-      
-        #writeup{
-            font-family: "Fraunces";
-            font-size: 15px;
-            position: absolute;
-            top:380px;
-            left:150px;
-            text-align: center;
-            line-height: 20px;
-            color: rgb(51,121,107);
-      
-        }
+        width: 100%;
+        /* margin-bottom: 0px; */
         
     }
-
-    #fruittwo{
+    #fruit #writeup{
+        font-family: "Fraunces";
+        font-size: 15px;
+        position: absolute;
+        top:4200px;
+        text-align: center;
+        line-height: 20px;
+        color: rgb(51,121,107);
+  
+    }
+    #fruittwo img{
         /* height: 600px; */
         position: relative;
         /* width: 100%; */
@@ -158,7 +151,7 @@ header{
             font-size: 15px;
             position: absolute;
             top:380px;
-            left:150px;
+            left:180px;
             text-align: center;
             line-height: 20px;
             color: rgb(51,121,107);
@@ -272,164 +265,181 @@ footer{
     }
 }
 
-@media screen and (max-width:480px){
-    header nav .leftNav,#desktop,#eggdesktop{
-        display: none;
-    }
-
-    header nav{
-        width: 400px;
-        margin: 0px auto;
-        justify-content: space-between;
-    }
+@media screen and (min-width:0px){
 
     header nav #logo{
-        margin-left: 0px;
+        width: 100px;
+        margin-left: 20px;
     }
-
-    header h1{
-        margin-top: 0px;
+    header nav #hamburger{
+        display: block;
+        margin-right: 20px;
     }
-   header #arrowhead{
-    margin-top: -100px;
-   }
+    header nav {
+        justify-content: space-between;
+    }
+    header nav .leftNav{
+        display: none;
+    }
+    header #desktop{
+        display: none;
+    }
+    header #headarrow{
+        margin-top: 40px;
+    }
+    .content #eggdesktop{
+        display: none;
+    }
     .content{
         display: block;
     }
 
-    .content #text{
-        margin:30px;
+    .content #fruit{
+        margin-bottom: -5px;
     }
-    .content h1{
-        text-align: center;
+    .content #text h1{
         width: 100%;
-        margin-bottom: 30px;
+        text-align: center;
+        margin: 50px auto;
+        font-size: 30px;
     }
-    #text p,button{
+    .content #text p{
         margin: 0px auto;
         text-align: center;
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 30px;
     }
-
-    .content #fruit{
-        position: relative;
-        height: 500px;
+    .content button{
+        text-align: center;
+        margin: 0px auto 50px;
+        font-size: 18px;
     }
-    .content #fruit #writeup{
-        position: absolute;
-        top:300px;
-        left: 20px;
-        width: 400px;
-
-    }
-
-    .content #fruittwo{
-        position: relative;
-    }
-    .content #fruittwo #writeuptwo{
-        position: absolute;
-        top: 200px;
-        left: 20px;
-        width: 400px;
-
-    }
-
-    section h3{
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
-
     section .testimonials{
         display: block;
     }
 
-    section .testimonials #client img{
-        margin-top: 30px
-    }
-
-    footer .footImages{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-    footer .footImages img{
-        width: 100%;
-    }
-
-    .socialMedia .socialMediaLinks{ 
-        width: 50%;
-    }
-
-    .socialMedia .socialMediaImgs{ 
-        width: 30%;
-    }
-}
-
-
-
-/* media query 768px */
-
-@media screen and (max-width:768px){
-
-
-      header nav .leftNav,#desktop,#eggdesktop{
-        display: none;
-    }
-
-    header nav #logo{
-        margin-left: 0px;
-    }
-
-    header h1{
-        margin-top: 0px;
-    }
-
-
-    header nav{
-        margin: 0px auto;
-    }
-
-    .content{
-        display: block;
-    }
-
-    .content #text{
-        margin:30px;
-    }
-    .content h1{
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    #text p,button{
-        margin: 0px auto;
-        text-align: center;
+    section #client img{
+        margin-top: 20px
     }
 
     section h3{
         font-size: 20px;
-        margin-bottom: 30px;
     }
 
-    section .testimonials{
-        display: block;
+    footer .footImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    section .testimonials #client img{
-        margin-top: 30px
+    footer .footImages #ftop{
+        margin-bottom: -4px;
+    }
+
+    .socialMedia .socialMediaLinks{
+        width: 300px;
+    }
+    .socialMedia .socialMediaImgs{
+        width: 150px;
     }
 }
-
-@media screen and (min-width:769px) {
+@media screen and (min-width:481px) {
+    
+    header nav .leftNav{
+        display: flex;
+        width: 300px;
+        margin-right: 20px;
+    }
 
     header nav #hamburger{
         display: none;
     }
+    .content #text p{
+        margin: 0px auto;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 35px;
+    }
 
-    header #mediahidden,#eggmobile{
+    .content #fruit{
+        margin-bottom: -5px;
+    }
+    .content button{
+        text-align: center;
+        margin: 0px auto 50px;
+        font-size: 20px;
+    }
+
+    section h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width:769px) {
+    header #desktop{
+        display: block;
+    }
+
+    header nav{
+        justify-content: space-b;
+    }
+
+    header nav #logo{
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    header #mediahidden{
         display: none;
     }
-   
-}
+    header #headarrow{
+        margin-top: 100px;
+    }
+      header nav .leftNav{
+        display: flex;
+        margin-right: 50px;
+        width: 400px;
+    }
+     header nav #hamburger{
+        display: none;
+    }
 
+    .content{
+        display: grid;
+    }
+    .content #eggdesktop{
+        display: flex;
+    }
+
+    .content #eggmobile{
+        display: none;
+    }
+    section .testimonials{
+        display: flex;
+    }
+    footer .footImages {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
     
+    .content #text h1{
+        width: 100%;
+        text-align: start;
+        margin: 50px auto;
+        font-size: 20px;
+    }
+    .content #text p{
+        margin: 0px auto;
+        text-align: start;
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .content button{
+        text-align: center;
+        margin: 0px auto 50px;
+        font-size: 16px;
+    }
 
+}
