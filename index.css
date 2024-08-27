@@ -437,6 +437,10 @@ footer{
         display: flex;
     }
 
+    .content #text button{
+        margin: 0px;
+    }
+
     .content #eggmobile{
         display: none;
     }
